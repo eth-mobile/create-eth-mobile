@@ -8,7 +8,6 @@ const defaultOptions = {
   solidityFramework: null,
   install: true,
   dev: false,
-  externalExtension: null,
   help: false,
 } as const satisfies RawOptions;
 
@@ -44,8 +43,7 @@ export async function promptForMissingOptions(
     project,
     install: options.install,
     dev: options.dev ?? defaultOptions.dev,
-    solidityFramework: solidityFramework === "none" ? null : solidityFramework,
-    externalExtension: options.externalExtension,
+    solidityFramework,
   };
 
   return mergedOptions;

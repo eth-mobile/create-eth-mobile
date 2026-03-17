@@ -1,18 +1,10 @@
 export type Args = string[];
 export type SolidityFramework = "hardhat" | "foundry";
-export type ExternalExtensionNameDev = string;
-
-export type ExternalExtension = {
-  repository: string;
-  branch?: string | null;
-  createEthVersion?: string;
-};
 
 type BaseOptions = {
   project: string | null;
   install: boolean;
   dev: boolean;
-  externalExtension: ExternalExtension | ExternalExtensionNameDev | null;
   solidityFramework: SolidityFramework | "none" | null;
 };
 
@@ -21,9 +13,8 @@ export type RawOptions = BaseOptions & {
 };
 
 export type Options = {
-  [Prop in keyof Omit<BaseOptions, "externalExtension" | "solidityFramework">]: NonNullable<BaseOptions[Prop]>;
+  [Prop in keyof BaseOptions]: NonNullable<BaseOptions[Prop]>;
 } & {
-  externalExtension: RawOptions["externalExtension"];
   solidityFramework: SolidityFramework | null;
 };
 

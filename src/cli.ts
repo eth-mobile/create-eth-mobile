@@ -20,7 +20,7 @@ export async function cli(args: Args) {
       process.exit(1);
     }
 
-    const { rawOptions, solidityFrameworkChoices } = await parseArgumentsIntoOptions(args);
+    const { rawOptions, solidityFrameworkChoices } = parseArgumentsIntoOptions(args);
     if (rawOptions.help) {
       showHelpMessage();
       return;

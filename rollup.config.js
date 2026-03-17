@@ -9,5 +9,5 @@ export default {
     format: "es",
     sourcemap: true,
   },
-  plugins: [autoExternal(), typescript({ exclude: ["templates/**", "externalExtensions/**"] }), json()],
+  plugins: [autoExternal(), typescript({ exclude: ["templates/**"] }), json()],
 };

@@ -6,8 +6,7 @@ export const showHelpMessage = () => {
 `);
   console.log(` ${chalk.bold.blue("Options:")}
     ${chalk.gray("--skip, --skip-install")}       Skip packages installation
-    ${chalk.gray("-s, --solidity-framework")}     Choose solidity framework
-    ${chalk.gray("-e, --extension")}              Add curated or third-party extension
+    ${chalk.gray("-s, --solidity-framework")}     Choose solidity framework (hardhat | foundry)
     ${chalk.gray("-h, --help")}                   Help
     `);
 };
