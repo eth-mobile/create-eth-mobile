@@ -1,96 +1,102 @@
-# 🏗 create-eth
+# 📲 create-eth-mobile
 
-CLI to create decentralized applications (dapps) using Scaffold-ETH 2.
+CLI to create mobile decentralized applications (dApps) using [ETH Mobile](https://github.com/dewdrip/eth-mobile).
 
 <h4 align="center">
-  <a href="https://docs.scaffoldeth.io">SE-2 Documentation</a> |
-  <a href="https://scaffoldeth.io">SE-2 Website</a>
+  <a href="https://docs.ethmobile.io">ETH Mobile Documentation</a> |
+  <a href="https://www.ethmobile.io">ETH Mobile Website</a>
 </h4>
 
-🧪 An open-source, up-to-date toolkit for building decentralized applications (dapps) on the Ethereum blockchain. It's designed to make it easier for developers to create and deploy smart contracts and build user interfaces that interact with those contracts.
+An open-source toolkit for building mobile dApps on Ethereum and other EVM-compatible blockchains. It simplifies mobile dApp development with fast, secure, and customizable pre-built components.
 
-> [!NOTE]
-> 🤖 Scaffold-ETH 2 is AI-ready! It has everything agents need to build on Ethereum. Check `.agents/`, `.claude/`, `.opencode` or `.cursor/` for more info.
+⚙️ **Tech Stack**: React Native, Expo, Hardhat or Foundry, Ethers, TypeScript, and Thirdweb.
 
-⚙️ Built using NextJS, RainbowKit, Foundry/Hardhat, Wagmi, Viem, and Typescript.
+### Key features
 
-- ✅ **Contract Hot Reload**: Your frontend auto-adapts to your smart contract as you edit it.
-- 🪝 **[Custom hooks](https://docs.scaffoldeth.io/hooks/)**: Collection of React hooks wrapper around [wagmi](https://wagmi.sh/) to simplify interactions with smart contracts with typescript autocompletion.
-- 🧱 [**Components**](https://docs.scaffoldeth.io/components/): Collection of common web3 components to quickly build your frontend.
-- 🔥 **Burner Wallet & Local Faucet**: Quickly test your application with a burner wallet and local faucet.
-- 🔐 **Integration with Wallet Providers**: Connect to different wallet providers and interact with the Ethereum network.
-
-![Debug Contracts tab](https://github.com/scaffold-eth/scaffold-eth-2/assets/55535804/b237af0c-5027-4849-a5c1-2e31495cccb1)
+- 🧑‍💻 **Contract Debugger**: Inspect smart contract details and interact with contracts in real time.
+- 💳 **In-Built Wallet**: Secure mobile crypto wallet powered by [Thirdweb](https://thirdweb.com/).
+- ✅ **Contract Hot Reload**: Frontend updates automatically as you change smart contracts.
+- 🪝 **Custom Hooks**: React hooks with TypeScript autocompletion for contract interaction.
+- 🧱 **Web3 Components**: Pre-built components for building mobile dApp frontends.
 
 ## Requirements
 
-Before you begin, you need to install the following tools:
+Before you begin, install:
 
 - [Node (>= v20.18.3)](https://nodejs.org/en/download/)
-- Yarn ([v1](https://classic.yarnpkg.com/en/docs/install/) or [v2+](https://yarnpkg.com/getting-started/install))
+- [Yarn](https://yarnpkg.com/getting-started/install)
 - [Git](https://git-scm.com/downloads)
+- [React Native environment](https://reactnative.dev/docs/set-up-your-environment)
 
 ## Quickstart
 
-To get started with Scaffold-ETH 2, follow the steps below:
+1. **Create a new ETH Mobile app**
 
-1. Install the latest version of Scaffold-ETH 2
-
-```
-npx create-eth@latest
+```bash
+npx eth-mobile@latest
 ```
 
-This command will install all the necessary packages and dependencies, so it might take a while.
+Choose a project name and solidity framework (Hardhat or Foundry). The CLI clones [ETH Mobile](https://github.com/dewdrip/eth-mobile) and sets up your project.
 
-> [!NOTE]
-> You can also initialize your project with one of our extensions to add specific features or starter-kits. Learn more in our [extensions documentation](https://docs.scaffoldeth.io/extensions/).
+2. **Install dependencies** (if not done by the CLI)
 
-2. Run a local network in the first terminal:
-
+```bash
+cd <your-project-name>
+yarn
 ```
+
+3. **Start a local network** (first terminal)
+
+```bash
 yarn chain
 ```
 
-This command starts a local Ethereum network that runs on your local machine and can be used for testing and development. Learn how to [customize your network configuration](https://docs.scaffoldeth.io/quick-start/environment#1-initialize-a-local-blockchain).
+4. **Deploy contracts** (second terminal)
 
-3. On a second terminal, deploy the test contract:
-
-```
+```bash
 yarn deploy
 ```
 
-This command deploys a test smart contract to the local network. You can find more information about how to customize your contract and deployment script in our [documentation](https://docs.scaffoldeth.io/quick-start/environment#2-deploy-your-smart-contract).
+5. **Configure the local network provider**
 
-4. On a third terminal, start your NextJS app:
-
+```bash
+yarn configure-network
 ```
+
+6. **Prebuild native modules**
+
+```bash
+yarn prebuild
+```
+
+7. **Run the app**
+
+```bash
 yarn start
 ```
 
-Visit your app on: `http://localhost:3000`. You can interact with your smart contract using the `Debug Contracts` page. You can tweak the app config in `packages/nextjs/scaffold.config.ts`.
+Then in another terminal:
 
-**What's next**:
-
-Visit the [What's next section of our docs](https://docs.scaffoldeth.io/quick-start/environment#whats-next) to learn how to customize your contracts, frontend, and more.
+```bash
+yarn android
+# or
+yarn ios
+```
 
 ## Documentation
 
-Visit our [docs](https://docs.scaffoldeth.io) to learn all the technical details and guides of Scaffold-ETH 2.
-
-To know more about its features, check out our [website](https://scaffoldeth.io).
-
-Watch [BG Labs](https://youtube.com/playlist?list=PLJz1HruEnenD77QAsqnk7KG8rSOMk0B99&si=JXZRn78_NBcvJJoZ) - our video series on building with Scaffold-ETH 2.
+- [ETH Mobile docs](https://docs.ethmobile.io)
+- [ETH Mobile website](https://www.ethmobile.io)
 
 ## Contributing
 
-Built by [BuidlGuidl](https://buidlguidl.com) builders, we welcome contributions to create-eth!
+Built by DewDrip. We welcome contributions to eth-mobile!
 
-For more information and guidelines for contributing, please see [CONTRIBUTING.MD](https://github.com/scaffold-eth/create-eth/blob/main/CONTRIBUTING.md)
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## Community
 
 <h4 align="center">
-  <a href="https://x.com/buidlguidl">Buidlguidl X</a> |
-  <a href="https://x.com/ScaffoldETH">SE-2 X</a> |
-  <a href="https://t.me/joinchat/F7nCRK3kI93PoCOk">SE-2 developers chat</a>
+  <a href="https://github.com/dewdrip">DewDrip on GitHub</a> |
+  <a href="https://github.com/dewdrip/eth-mobile">ETH Mobile repo</a>
 </h4>

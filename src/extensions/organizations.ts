@@ -24,7 +24,7 @@ export const organizations: Extension[] = [
     extensionFlagValue: "ethereumidentitykit/scaffold-efp-ext",
     name: "EFP Extension",
     description:
-      "This extension adds Ethereum Follow Protocol (EFP) social graph functionality to your Scaffold-ETH 2 project. EFP is the onchain social graph protocol for Ethereum accounts - like Twitter follows, but fully decentralized and portable across any dApp.",
+      "This extension adds Ethereum Follow Protocol (EFP) social graph functionality to your ETH Mobile project. EFP is the onchain social graph protocol for Ethereum accounts - like Twitter follows, but fully decentralized and portable across any dApp.",
     repository: "https://github.com/ethereumidentitykit/scaffold-efp-ext",
   },
 ];

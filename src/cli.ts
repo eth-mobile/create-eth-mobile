@@ -15,7 +15,7 @@ export async function cli(args: Args) {
     const { errors } = await checkSystemRequirements();
 
     if (errors.length > 0) {
-      console.log(chalk.red("\n❌ Create-eth requirements not met:"));
+      console.log(chalk.red("\n❌ create-eth-mobile requirements not met:"));
       errors.forEach(error => console.log(chalk.red(`  - ${error}`)));
       process.exit(1);
     }

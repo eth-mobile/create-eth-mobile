@@ -64,7 +64,7 @@ export async function parseArgumentsIntoOptions(
     if (extension.recommendedCreateEthVersion !== currentVersion) {
       console.log(
         chalk.yellow(
-          `\n⚠️  This extension requires create-eth ${chalk.bold(`v${extension.recommendedCreateEthVersion}`)}, but you're running ${chalk.bold(`v${currentVersion}`)}.\n`,
+          `\n⚠️  This extension requires create-eth-mobile ${chalk.bold(`v${extension.recommendedCreateEthVersion}`)}, but you're running ${chalk.bold(`v${currentVersion}`)}.\n`,
         ),
       );
 
@@ -74,9 +74,9 @@ export async function parseArgumentsIntoOptions(
       });
 
       if (switchVersion) {
-        console.log(chalk.gray(`\nSwitching to create-eth@${extension.recommendedCreateEthVersion}...\n`));
+        console.log(chalk.gray(`\nSwitching to create-eth-mobile@${extension.recommendedCreateEthVersion}...\n`));
 
-        await execa("npx", [`create-eth@${extension.recommendedCreateEthVersion}`, ...rawArgs.slice(2)], {
+        await execa("npx", [`eth-mobile@${extension.recommendedCreateEthVersion}`, ...rawArgs.slice(2)], {
           stdio: "inherit",
         });
 

@@ -53,7 +53,7 @@ export const createEthExtensions: Extension[] = [
   },
   {
     extensionFlagValue: "porto",
-    description: "This extension brings porto.sh SDK to Scaffold-ETH 2.",
+    description: "This extension brings porto.sh SDK to ETH Mobile.",
     repository: "https://github.com/scaffold-eth/create-eth-extensions",
     branch: "porto",
   },
