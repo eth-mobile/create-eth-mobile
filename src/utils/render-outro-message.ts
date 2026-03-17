@@ -11,20 +11,22 @@ export function renderOutroMessage(options: Options) {
   ${chalk.dim("cd")} ${options.project}
   `;
 
-  message += `
-  \t${chalk.bold("Start the local development node")}
-  \t${chalk.dim("yarn")} chain
-  `;
+  if (options.solidityFramework) {
+    message += `
+    \t${chalk.bold("Start the local development node")}
+    \t${chalk.dim("yarn")} chain
+    `;
 
-  message += `
-  \t${chalk.bold("In a new terminal window, deploy your contracts")}
-  \t${chalk.dim("yarn")} deploy
-  `;
+    message += `
+    \t${chalk.bold("In a new terminal window, deploy your contracts")}
+    \t${chalk.dim("yarn")} deploy
+    `;
 
-  message += `
-  \t${chalk.bold("Configure the local network provider")}
-  \t${chalk.dim("yarn")} configure-network
-  `;
+    message += `
+    \t${chalk.bold("Configure the local network provider")}
+    \t${chalk.dim("yarn")} configure-network
+    `;
+  }
 
   if (!options.install) {
     message += `
