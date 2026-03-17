@@ -39,17 +39,22 @@ export function renderOutroMessage(options: Options) {
   `;
 
   message += `
-  \t${chalk.bold("Run on Android")}
+  \t${chalk.bold("Start the Expo dev server")}
+  \t${chalk.dim("yarn")} start
+  `;
+
+  message += `
+  \t${chalk.bold("In a new terminal window, run on Android")}
   \t${chalk.dim("yarn")} android
   `;
 
   message += `
-  \t${chalk.bold("Run on iOS")}
+  \t${chalk.bold("In a new terminal window, run on iOS")}
   \t${chalk.dim("yarn")} ios
   `;
 
   message += `
-  ${chalk.bold.green("Thanks for using ETH Mobile 🙏, Happy Building!")}
+  ${chalk.bold.green("Thanks for using ETH Mobile 🙇‍♂️, Happy Building!")}
   `;
 
   console.log(message);

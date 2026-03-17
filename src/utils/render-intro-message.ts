@@ -1,9 +1,9 @@
 import chalk from "chalk";
 
 export const TITLE_TEXT = `
- ${chalk.bold.blue("+-+-+-+-+-+-+-+-+-+-+-+-+")}
- ${chalk.bold.blue("|   Create ETH Mobile   |")}
- ${chalk.bold.blue("+-+-+-+-+-+-+-+-+-+-+-+-+")}
+ ${chalk.bold.green("+-+-+-+-+-+-+-+-+-+-+-+-+")}
+ ${chalk.bold.green("|   Create ETH Mobile   |")}
+ ${chalk.bold.green("+-+-+-+-+-+-+-+-+-+-+-+-+")}
 `;
 
 export function renderIntroMessage() {
