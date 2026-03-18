@@ -1,6 +1,6 @@
 # 📲 create-eth-mobile
 
-CLI to create mobile decentralized applications (dApps) using [ETH Mobile](https://github.com/dewdrip/eth-mobile).
+CLI to create mobile decentralized applications (dApps) using [ETH Mobile](https://github.com/eth-mobile/eth-mobile).
 
 <h4 align="center">
   <a href="https://docs.ethmobile.io">ETH Mobile Documentation</a> |
@@ -36,7 +36,7 @@ Before you begin, install:
 npx eth-mobile@latest
 ```
 
-Choose a project name and solidity framework (Hardhat or Foundry). The CLI clones [ETH Mobile](https://github.com/dewdrip/eth-mobile) and sets up your project.
+Choose a project name and solidity framework (Hardhat or Foundry). The CLI clones [ETH Mobile](https://github.com/eth-mobile/eth-mobile) and sets up your project.
 
 2. **Install dependencies** (if not done by the CLI)
 
@@ -98,5 +98,5 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 <h4 align="center">
   <a href="https://github.com/dewdrip">DewDrip on GitHub</a> |
-  <a href="https://github.com/dewdrip/eth-mobile">ETH Mobile repo</a>
+  <a href="https://github.com/eth-mobile/eth-mobile">ETH Mobile repo</a>
 </h4>

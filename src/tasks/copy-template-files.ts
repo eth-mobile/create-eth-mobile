@@ -4,7 +4,7 @@ import { SOLIDITY_FRAMEWORKS } from "../utils/consts";
 import fs from "fs";
 import path from "path";
 
-const ETH_MOBILE_REPO = "https://github.com/dewdrip/eth-mobile.git";
+const ETH_MOBILE_REPO = "https://github.com/eth-mobile/eth-mobile.git";
 
 export async function copyTemplateFiles(options: Options, _templateDir: string, targetDir: string) {
   const { solidityFramework } = options;

@@ -6,7 +6,7 @@ This guide aims to provide an overview of the contribution workflow to help us m
 
 ## About the Project
 
-create-eth-mobile is a CLI tool to create mobile decentralized applications (dApps) on Ethereum and other EVM-compatible blockchains, providing builders with a starter kit based on [ETH Mobile](https://github.com/dewdrip/eth-mobile).
+create-eth-mobile is a CLI tool to create mobile decentralized applications (dApps) on Ethereum and other EVM-compatible blockchains, providing builders with a starter kit based on [ETH Mobile](https://github.com/eth-mobile/eth-mobile).
 
 Read the [README](README.md) to get an overview of the project.
 
