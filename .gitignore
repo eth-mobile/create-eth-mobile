@@ -3,6 +3,9 @@
 # Dependency directories
 node_modules/
 
+# npm
+.npmrc
+
 # yarn
 .yarn/*
 !.yarn/patches
