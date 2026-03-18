@@ -26,7 +26,7 @@ Before you begin, install:
 - [Node (>= v20.18.3)](https://nodejs.org/en/download/)
 - [Yarn](https://yarnpkg.com/getting-started/install)
 - [Git](https://git-scm.com/downloads)
-- [React Native environment](https://reactnative.dev/docs/set-up-your-environment)
+- [React Native](https://reactnative.dev/docs/set-up-your-environment)
 
 ## Quickstart
 
