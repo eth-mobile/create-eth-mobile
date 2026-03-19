@@ -46,6 +46,11 @@ export function renderOutroMessage(options: Options) {
   `;
 
   message += `
+  \t${chalk.bold.blue("Please leave us a ⭐ to encourage other builders")}
+  \t${chalk.dim("https://github.com/eth-mobile/eth-mobile")}
+  `;
+
+  message += `
   \t${chalk.bold("In a new terminal window, run on Android")}
   \t${chalk.dim("yarn")} android
   `;
