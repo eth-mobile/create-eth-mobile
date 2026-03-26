@@ -21,11 +21,6 @@ export function renderOutroMessage(options: Options) {
     \t${chalk.bold("In a new terminal window, deploy your contracts")}
     \t${chalk.dim("yarn")} deploy
     `;
-
-    message += `
-    \t${chalk.bold("Configure the local network provider")}
-    \t${chalk.dim("yarn")} configure-network
-    `;
   }
 
   if (!options.install) {
@@ -36,17 +31,12 @@ export function renderOutroMessage(options: Options) {
   }
 
   message += `
-  \t${chalk.bold("Prebuild native modules")}
-  \t${chalk.dim("yarn")} prebuild
-  `;
-
-  message += `
   \t${chalk.bold("Start the Expo dev server")}
   \t${chalk.dim("yarn")} start
   `;
 
   message += `
-  \t${chalk.bold.blue("Please leave us a ⭐ to encourage other builders")}
+  \t${chalk.bold.blue("Leave us a ⭐ to encourage others... PLEASE!")}
   \t${chalk.dim("https://github.com/eth-mobile/eth-mobile")}
   `;
 
@@ -56,12 +46,12 @@ export function renderOutroMessage(options: Options) {
   `;
 
   message += `
-  \t${chalk.bold("In a new terminal window, run on iOS")}
+  \t${chalk.bold("Run on iOS")}
   \t${chalk.dim("yarn")} ios
   `;
 
   message += `
-  ${chalk.bold.green("Thanks for using ETH Mobile 🙇‍♂️, Happy Building!")}
+  ${chalk.bold.green("Thanks for using ETH Mobile ❤️ Happy Building!")}
   `;
 
   console.log(message);

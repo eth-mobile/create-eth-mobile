@@ -1,4 +1,12 @@
-import { copyTemplateFiles, createFirstGitCommit, prettierFormat, installPackages } from "./tasks";
+import {
+  buildNativeModules,
+  configureLocalNetwork,
+  copyTemplateFiles,
+  createFirstGitCommit,
+  installPackages,
+  prettierFormat,
+  shouldConfigureLocalNetwork,
+} from "./tasks";
 import type { Options } from "./types";
 import { renderOutroMessage } from "./utils/render-outro-message";
 import chalk from "chalk";
@@ -39,6 +47,37 @@ export async function createProject(options: Options) {
             return "Can't use source prettier, since `yarn install` was skipped";
           }
           return false;
+        },
+      },
+      {
+        title: "⚙️ Configuring local network",
+        task: (_, task) => configureLocalNetwork(targetDirectory, task),
+        skip: () => {
+          if (!options.install) {
+            return "Can't configure local network, since `yarn install` was skipped";
+          }
+          if (!shouldConfigureLocalNetwork(options)) {
+            return "Skipped for projects without a Solidity framework";
+          }
+          return false;
+        },
+        rendererOptions: {
+          outputBar: 8,
+          persistentOutput: false,
+        },
+      },
+      {
+        title: "🏗️ Building native modules",
+        task: (_, task) => buildNativeModules(targetDirectory, task),
+        skip: () => {
+          if (!options.install) {
+            return "Can't build native modules, since `yarn install` was skipped";
+          }
+          return false;
+        },
+        rendererOptions: {
+          outputBar: 8,
+          persistentOutput: false,
         },
       },
       {

@@ -57,19 +57,11 @@ yarn chain
 yarn deploy
 ```
 
-5. **Configure the local network provider**
+5. **Configure network + prebuild**
 
-```bash
-yarn configure-network
-```
+These steps now run automatically during project setup.
 
-6. **Prebuild native modules**
-
-```bash
-yarn prebuild
-```
-
-7. **Run the app**
+6. **Run the app**
 
 ```bash
 yarn start
